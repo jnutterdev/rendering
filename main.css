@@ -3,3 +3,31 @@
 #content {
     margin: 0 auto;
 }
+
+.nametag {
+    width: 268px;
+    height: 147px;
+    margin: 0 auto;
+    color: white;
+}
+
+.nametag-header {
+    background-color: blue;
+    padding: 10px;
+}
+
+.nametag-body h1 {
+    color: black;
+}
+
+.present {
+    background-color: green;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.absent {
+    background-color: red;
+    margin-bottom: 10px;
+    width: 200px;
+}

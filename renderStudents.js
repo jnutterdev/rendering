@@ -1,17 +1,28 @@
-
 function renderStudents(students) {
+
+    let studentsArray = students.map(function(student) {
+        return `
+        
+            <div class="${student.isPresent ? "present" : "absent"}">
+                <h2>${student.name}</h2>
+                <span>${student.isPresent ? "present" : "absent"}</span>
+            </div>
+       
+        `;
+    });
+
     return `
         <div class="text-center mt-5">
-            <code>${JSON.stringify(students)}</code>
-        </div>
-    `
+            <h1>Roll call!</h1>
+            ${studentsArray.join('')}
+    `;
+
 }
 
 function students() {
     var content = document.getElementById('content');
 
-    var studentsAbstraction = [
-        {
+    var studentsAbstraction = [{
             name: "Kamilah",
             isPresent: true
         },
